@@ -16,20 +16,76 @@
           <label id="playerS">Mucha suerte</label>
         </div>
         <div id="estructuraSudoku">
-          <input type="button" value=""  id="c1" onclick="game(this)">
-          <input type="button" value=""  id="c2" onclick="game(this)">
-          <input type="button" value=""  id="c3" onclick="game(this)"></br>
-          <input type="button" value=""  id="c4" onclick="game(this)">
-          <input type="button" value=""  id="c5" onclick="game(this)">
-          <input type="button" value=""  id="c6" onclick="game(this)"></br>
-          <input type="button" value=""  id="c7" onclick="game(this)">
-          <input type="button" value=""  id="c8" onclick="game(this)">
-          <input type="button" value=""  id="c9" onclick="game(this)"></br></br>
+          <table>
+            <tr>
+              <td>
+                <table border="1">
+                  <tr>
+                    <td>
+                      <table>
+                        <tr>
+                          <td><input type="text" name="celda" pattern="[1-4]{1}" maxlength="1"></td>
+                          <td><input type="text" name="celda" maxlength="1"></td>
+                        </tr>
+                        <tr>
+                          <td><input type="text" name="celda" maxlength="1" value=""></td>
+                          <td><input type="text" name="celda" maxlength="1" value=""></td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td>
+                      <table>
+                        <tr>
+                          <td><input type="text" name="celda" maxlength="1" value=""></td>
+                          <td><input type="text" name="celda" maxlength="1" value=""></td>
+                        </tr>
+                        <tr>
+                          <td><input type="text" name="celda" maxlength="1" value=""></td>
+                          <td><input type="text" name="celda" maxlength="1" value=""></td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <table>
+                        <tr>
+                          <td><input type="text" name="celda" maxlength="1" value=""></td>
+                          <td><input type="text" name="celda" maxlength="1" value=""></td>
+                        </tr>
+                        <tr>
+                          <td><input type="text" name="celda" maxlength="1" value=""></td>
+                          <td><input type="text" name="celda" maxlength="1" value=""></td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td>
+                      <table>
+                        <tr>
+                          <td><input type="text" name="celda" maxlength="1" value=""></td>
+                          <td><input type="text" name="celda" maxlength="1" value=""></td>
+                        </tr>
+                        <tr>
+                          <td><input type="text" name="celda" maxlength="1" value=""></td>
+                          <td><input type="text" name="celda" maxlength="1" value=""></td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table><br>
+              </td>
+              <td>
+                El Mini-Sudoku es un rompecabezas de lógica.<br>El objetivo es rellenar una cuadrícula de 4x4 celdas dividida en subcuadrículas de 2×2 con las cifras del 1 al 4 partiendo de algunos números ya dispuestos en algunas de las celdas.<br>
+                No se debe repetir ningún número en una misma fila, columna o subcuadrícula.<br>Cuando estés seguro de tus respuestas dale en "Comprobar" <br>Mucha suerte!!!
+              </td>
+            </tr>
+          </table>
         </div>
+        <input type="button" value="Comprobar" class="btn btn-default btn-lg" id="comprobar" onclick="comprobar()"><br><br>
       </div>
-      <input type="button" value="Jugar de nuevo" class="btn btn-default btn-lg" id="newGame" onclick="repite()"><br><br>
+      <input type="button" value="Jugar de nuevo" class="btn btn-default btn-lg" id="repite" onclick="repite()"><br><br>
       <a href=index.html><button type="button" name="button">Prueba otros juegos!!!</button></a>
-    </section>
+    </section><br>
     <div id"creado">Proyecto realizado por <strong>Ruth Salvador Zorrilla</strong></div>
     <script type="text/javascript" src="assets/js/miniSudoku.js">
     </script>
