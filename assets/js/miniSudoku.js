@@ -39,7 +39,7 @@ var comprobar = function(){
 
   for (var i = 0; i < celdas.length; i++) {
     if (!(/[1-4]/.test(celdas[i].value))){
-      alert ("Esta celda no contiene un número válido");
+      alert ("Recuerda que los números válidos son 1,2,3,4");
       celdas[i].focus();
     }
   }
